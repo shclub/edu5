@@ -45,7 +45,8 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 8080
-
+    nodePort: 30081
+  type: NodePort
 ---
 kind: Service
 apiVersion: v1
@@ -58,3 +59,5 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 8080
+    nodePort: 30082
+  type: NodePort
