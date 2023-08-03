@@ -13,11 +13,6 @@ spec:
   destination:
     name: mint
     namespace: default
-  syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
-      allowEmpty: false
     syncOptions:
       - PrunePropagationPolicy=foreground
       - Replace=false
