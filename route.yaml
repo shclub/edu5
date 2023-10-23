@@ -3,7 +3,7 @@ kind: Route
 metadata:
   labels:
     app.kubernetes.io/component: server
-  name: nginx-route
+  name: nginx-route-edu18
 spec:
   host: nginx-edu18.apps.okd4.ktdemo.duckdns.org
   port:
