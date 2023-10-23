@@ -5,12 +5,12 @@ metadata:
     app.kubernetes.io/component: server
   name: nginx-route
 spec:
-  host: nginx-edu30.apps.211-34-231-82.nip.io
+  host: nginx-edu18.apps.okd4.ktdemo.duckdns.org
   port:
-    targetPort: 80
-#  tls:
-#    insecureEdgeTerminationPolicy: Redirect
-#    termination: passthrough
+    targetPort: 5000
+  tls:
+    insecureEdgeTerminationPolicy: Allow
+    termination: edge
   to:
     kind: Service
     name: mynginx
