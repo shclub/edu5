@@ -13,7 +13,7 @@ spec:
         run: mynginx
     spec:
       containers:
-      - image: nginx
+      - image: ghcr.io/shclub/nginx
         name: mynginx
         ports:
         - containerPort: 80
