@@ -5,12 +5,7 @@ metadata:
     app.kubernetes.io/component: server
   name: nginx-route-edu18
 spec:
-  host: nginx-edu18.apps.okd4.ktdemo.duckdns.org
-  port:
-    targetPort: 5000
- # tls:
- #   insecureEdgeTerminationPolicy: Allow
- #   termination: edge
+  host: nginx
   port:
     targetPort: http
   tls:
