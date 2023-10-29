@@ -8,8 +8,12 @@ spec:
   host: nginx-edu18.apps.okd4.ktdemo.duckdns.org
   port:
     targetPort: 5000
+ # tls:
+ #   insecureEdgeTerminationPolicy: Allow
+ #   termination: edge
+  port:
+    targetPort: http
   tls:
-    insecureEdgeTerminationPolicy: Allow
     termination: edge
   to:
     kind: Service
